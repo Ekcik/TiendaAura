@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Aura — Inicio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Tienda Aura — Indumentaria urbana, productos destacados, catálogo dinámico, contacto y carrito de compras.">
+  <meta name="keywords" content="tienda, ropa, ecommerce, moda, indumentaria, aura, catálogo, carrito">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ======================================= -->
+<!-- HEADER + NAVEGACIÓN -->
+<!-- ======================================= -->
+
+<header id="inicio" class="site-header">
+  <div class="container header-content">
+
+    <a href="#inicio">
+      <img src="Imagenes/logo2.png" alt="Logo Tienda Aura" class="logo">
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos destacados</a></li>
+        <li><a href="productos.html">Catálogo</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <button id="openCart" aria-label="Abrir carrito" class="cart-button">
+      🛒 <span id="cartCount">0</span>
+    </button>
+
+  </div>
+</header>
+
+<!-- ======================================= -->
+<!-- NAVEGACIÓN INTERNA -->
+<!-- ======================================= -->
+
+<nav aria-label="Navegación interna" class="internal-nav">
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#productos">Productos</a></li>
+    <li><a href="#video">Video</a></li>
+    <li><a href="#resenas">Reseñas</a></li>
+    <li><a href="#ubicacion">Ubicación</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<!-- ======================================= -->
+<!-- HERO -->
+<!-- ======================================= -->
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Estilo que vibra con vos</h1>
+    <p>Ropa urbana, cómoda y versátil. Descubrí lo nuevo de Aura.</p>
+    <a href="productos.html" class="btn btn--primary">Ver catálogo</a>
+  </div>
+</section>
+
+
+<!-- ======================================= -->
+<!-- PRODUCTOS DESTACADOS -->
+<!-- ======================================= -->
+
+<section id="productos" class="section">
+  <h2>Productos Destacados</h2>
+
+  <div class="grid products">
+
+    <article class="card" 
+             data-name="Remera Classic" 
+             data-price="8500" 
+             data-img="Imagenes/Prenda1.jpg">
+      <img src="Imagenes/Prenda1.jpg" alt="Remera Classic">
+      <div class="card__body">
+        <h3>Remera Classic</h3>
+        <p>Algodón 100%. Colores básicos.</p>
+        <div class="card__actions">
+          <a href="productos.html" class="btn btn--ghost">Ver más</a>
+          <button class="btn btn--primary add-to-cart">Agregar</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" 
+             data-name="Campera Light" 
+             data-price="18900" 
+             data-img="Imagenes/Prenda2.jpg">
+      <img src="Imagenes/Prenda2.jpg" alt="Campera Light">
+      <div class="card__body">
+        <h3>Campera Light</h3>
+        <p>Liviana y resistente al viento.</p>
+        <div class="card__actions">
+          <a href="productos.html" class="btn btn--ghost">Ver más</a>
+          <button class="btn btn--primary add-to-cart">Agregar</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" 
+             data-name="Jeans Regular" 
+             data-price="14300" 
+             data-img="Imagenes/Prenda3.jpg">
+      <img src="Imagenes/Prenda3.jpg" alt="Jeans Regular">
+      <div class="card__body">
+        <h3>Jeans Regular</h3>
+        <p>Corte cómodo. Azules y negros.</p>
+        <div class="card__actions">
+          <a href="productos.html" class="btn btn--ghost">Ver más</a>
+          <button class="btn btn--primary add-to-cart">Agregar</button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+<!-- ======================================= -->
+<!-- VIDEO (MULTIMEDIA) -->
+<!-- ======================================= -->
+
+<section id="video" class="section">
+  <h2>Vestite con estilo</h2>
+
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/M2nYiKXPxd0"
+      title="Video indumentaria"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+
+<!-- ======================================= -->
+<!-- RESEÑAS (GRID) -->
+<!-- ======================================= -->
+
+<section id="resenas" class="section">
+  <h2>Reseñas</h2>
+  <p class="section-subtitle">Lo que opinan nuestros clientes.</p>
+
+  <div class="grid reviews">
+    <article class="review card">
+      <p class="review-stars" aria-label="5 de 5 estrellas">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </p>
+      <p>"Excelente calidad y envío rápido."</p>
+      <span>— Camila</span>
+    </article>
+
+    <article class="review card">
+      <p class="review-stars" aria-label="4 de 5 estrellas">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </p>
+      <p>"Colores tal cual a las fotos. Muy buena atención."</p>
+      <span>— Matías</span>
+    </article>
+
+    <article class="review card">
+      <p class="review-stars" aria-label="5 de 5 estrellas">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </p>
+      <p>"La campera es muy cómoda. Volvería a comprar."</p>
+      <span>— Sofía</span>
+    </article>
+  </div>
+</section>
+
+
+
+<!-- ======================================= -->
+<!-- UBICACIÓN -->
+<!-- ======================================= -->
+
+<section id="ubicacion" class="section">
+    <h2>Ubicación</h2>
+    <p class="section-subtitle">Nos encontrás acá 👇</p>
+
+    <div class="map-container" style="margin-top:20px; max-width:900px; margin:auto;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.716399738157!2d-58.788603125224675!3d-34.40855364721577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9e547df5109b%3A0x420fd0bd20a8015d!2sNoruega%202641%2C%20B1620%20Manuel%20Alberti%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1764642835777!5m2!1ses-419!2sar"
+        width="100%"
+        height="450"
+        style="border:0; border-radius:12px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+
+<!-- ======================================= -->
+<!-- CONTACTO + FORMSPREE -->
+<!-- ======================================= -->
+
+<section id="contacto" class="section">
+  <h2>Contacto</h2>
+
+  <form id="formAura" class="form"
+        action="https://formspree.io/f/mgvnrvwz"
+        method="POST">
+
+    <label>Nombre:
+      <input type="text" name="nombre" required>
+    </label>
+
+    <label>Email:
+      <input type="email" name="email" required>
+    </label>
+
+    <label>Asunto:
+      <input type="text" name="asunto" required>
+    </label>
+
+    <label>Mensaje:
+      <textarea name="mensaje" rows="5" required></textarea>
+    </label>
+
+    <button type="submit" class="btn btn--primary">Enviar</button>
+
+    <p id="form-status" class="form-status"></p>
+  </form>
+</section>
+
+</main>
+
+
+<!-- ======================================= -->
+<!-- CARRITO -->
+<!-- ======================================= -->
+
+<aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+  <button id="closeCart" class="close-cart">✖</button>
+  <h2>Carrito</h2>
+
+  <div id="cartItems"></div>
+
+  <div class="cart-summary">
+    <p>Total: <strong id="cartTotal">$0</strong></p>
+    <button id="checkout" class="btn btn--primary" disabled>Finalizar compra</button>
+    <button id="clearCart" class="btn btn--ghost">Vaciar carrito</button>
+  </div>
+</aside>
+
+<div id="cartBackdrop" class="backdrop" hidden></div>
+
+
+<!-- FOOTER -->
+
+<footer>
+  <p>© <span id="year"></span> Tienda Aura — Damian A. A. Diaz</p>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="script.js"></script>
+
+</body>
+</html>

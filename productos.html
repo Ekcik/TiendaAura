@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos — Tienda Aura</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Catálogo completo de productos de Tienda Aura.">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header id="inicio">
+  <div class="container header-content">
+    <a href="index.html">
+      <img src="Imagenes/logo2.png" alt="Logo Tienda Aura" class="logo">
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html#inicio">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="index.html#video">Video</a></li>
+        <li><a href="index.html#resenas">Reseñas</a></li>
+        <li><a href="index.html#ubicacion">Ubicación</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <button id="openCart" aria-label="Abrir carrito" class="cart-button">
+      🛒 <span id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<main class="section">
+  <h2>Nuestra Colección Completa</h2>
+  <p class="section-subtitle" style="text-align:center; color:var(--muted); margin-bottom:24px;">
+    Descubrí todos nuestros productos.
+  </p>
+
+  <!-- Acá el JS genera las cards dinámicamente -->
+  <div id="apiProducts" class="grid products"></div>
+
+  <div style="text-align:center; margin-top:30px;">
+    <a href="index.html#inicio" class="btn btn--primary">⬅ Volver al inicio</a>
+  </div>
+</main>
+
+<!-- CARRITO -->
+<aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+  <button id="closeCart" class="close-cart">✖</button>
+
+  <h2>Carrito</h2>
+
+  <div id="cartItems"></div>
+
+  <div class="cart-summary">
+    <p>Total: <strong id="cartTotal">$0</strong></p>
+    <button id="checkout" class="btn btn--primary" disabled>Finalizar compra</button>
+    <button id="clearCart" class="btn btn--ghost">Vaciar carrito</button>
+  </div>
+</aside>
+
+<div id="cartBackdrop" class="backdrop" hidden></div>
+
+<footer>
+  <p>© <span id="year"></span> Tienda Aura — Damian A. A. Diaz</p>
+</footer>
+
+<!-- JS principal -->
+<script src="script.js"></script>
+
+</body>
+</html>
